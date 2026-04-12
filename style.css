@@ -54,31 +54,12 @@ body {
   overflow-x: hidden;
 }
 /* ........Cursor........... */
-#cursor {
-  height: 20px;
-  width: 20px;
-  background:var(--primary);
-  border-radius: 50%;
-  position: fixed;
-  z-index: 99;
-  transition: all linear 0.1s;
-}
-#cursor-blur {
-  height: 500px;
-  width: 500px;
 
-  background-color:rgba(0, 213, 255, 0.308);
-  border-radius: 50%;
-  position: fixed;
-  filter: blur(80px);
-  z-index: 9;
-  transition: all linear 0.4s;
-}
  /* .....navbar......... */
 #nav {
   height: 130px;
   width: 100%;
-
+  background: #000;
   display: flex;
   align-items: center;
   padding: 0 80px;
@@ -120,10 +101,11 @@ video {
 #main {
   position: relative;
   background-color: rgba(0, 0, 0, 0.39);
+  margin-top: 130px; /* Prevents hero section from being hidden behind navbar */
 }
 /* .......about page 1......... */
 #page1 {
-  height: 100vh;
+  min-height: 70vh;
   width: 100%;
   position: relative;
   display: flex;
@@ -132,10 +114,11 @@ video {
   flex-direction: column;
   text-align: center;
   z-index: 10;
+  padding: 48px 0 32px 0;
 }
 #page1 h1 {
-  font-size: 6vw;
-  font-weight: 900;
+  font-size: 3.2vw;
+  font-weight: 800;
   position: relative;
 }
 #page1 h1::before {
@@ -144,27 +127,27 @@ video {
  
   top: -4px;
   left: -4px;
-  font-size: 6vw;
+  font-size: 3.2vw;
   opacity: 0.55;
   
   z-index: -1;
 }
 #page1 h2 {
-  color: #d0c2c2;
-  font-size: 25px;
-  font-weight: 700;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  color: #cacaca;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 8px;
+  margin-bottom: 14px;
 }
 #page1 p {
-  font-size: 1.5vw;
-  font-weight: 500;
+  font-size: 1rem;
+  font-weight: 400;
   width: 40%;
 }
 
 #page1 .date-location {
-  font-size: 2vw;
-  font-weight: 700;
+  font-size: 1.1rem;
+  font-weight: 600;
   margin-top: 15px;
   width: 45%;
 }
@@ -202,9 +185,9 @@ video {
 
 
 #page2 {
-  min-height: 100vh;
+  min-height: 70vh;
   width: 100%;
-  padding-top: 120px;
+  padding-top: 48px;
   z-index: 10;
 }
 
@@ -255,12 +238,11 @@ video {
 
 #about-us {
   width: 100%;
-  
-  min-height: 60vh;
-  padding: 80px 0;
+  min-height: 50vh;
+  padding: 36px 0 24px 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 28px;
   align-items: flex-start;
   justify-content: center;
   position: relative;
@@ -273,9 +255,9 @@ video {
   text-align: center;
 }
 #about-us-in h3 {
-  font-size: 54px;
-  font-weight: 800;
-  margin-bottom: 30px;
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 18px;
   text-align: center;
 }
 #about-us-in p {
@@ -358,7 +340,7 @@ background-image:url(Assests/3d-perception.jpg);
 
 
 #page3 {
-  min-height: 100vh;
+  min-height: 70vh;
   width: 100%;
   background-color: #000;
   display: flex;
@@ -366,32 +348,35 @@ background-image:url(Assests/3d-perception.jpg);
   align-items: center;
   justify-content: center;
   position: relative;
-  padding: 80px 0;
+  padding: 48px 0 32px 0;
 }
 
 #page3 .section-title {
-  font-size: 54px;
-  margin-bottom: 40px;
+  font-size: 2.6rem;
+  margin-top: 48px;
+  margin-bottom: 18px;
+  text-align: center;
 }
 
 #page3 .schedule {
-  width: 55%;
-  max-width: 880px;
-  margin-left: 18%;
-  padding-left: 20px;
+  width: 60%;
+  max-width: 600px;
+  margin-left: 0;
+  padding-left: 0;
+  margin: 0 auto 0 auto;
 }
 
 #page3 .schedule p {
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 48px;
-  text-align: left;
+  font-size: 1.05rem;
+  font-weight: 500;
+  line-height: 1.7;
+  text-align: lefteft;
   margin: 0;
 }
 
 #page3 img {
   position: absolute;
-  height: 60px;
+  height: 32px;
 }
 #page3 #colon1 {
   left: 15%;
@@ -403,37 +388,57 @@ background-image:url(Assests/3d-perception.jpg);
 }
 
   #page4 {
-  min-height: 100vh;
+  min-height: 70vh;
   width: 100%;
   background-color: #000; 
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 100px 20px;
+  padding: 48px 0 32px 0;
   font-family: 'Inter', sans-serif;
 }
 
 #page4 h1 {
-  font-size: 5vw;
+  font-size: 2.2rem;
   color: #fff;
-  margin-bottom: 60px;
+  margin-bottom: 28px;
   text-transform: uppercase;
-  font-weight: 800;
+  font-weight: 700;
+  letter-spacing: 0.5px;
 }
 
 #organizers-cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
-  max-width: 1200px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  max-width: 900px;
   width: 100%;
+}
+
+#program-committee-section h1 {
+  font-size: 2.2rem;
+  color: #fff;
+  margin-bottom: 28px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+#program-committee-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto 40px auto;
 }
 
 .organizer-card {
   background: linear-gradient(180deg, #121212 0%, #080808 100%);
   border: 1px solid #222;
-  border-radius: 20px;
-  padding: 50px 20px;
+  border-radius: 14px;
+  padding: 22px 10px 16px 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -441,6 +446,8 @@ background-image:url(Assests/3d-perception.jpg);
   transition: border 0.3s ease;
   position: relative;
   overflow: hidden;
+  min-width: 0;
+  min-height: 0;
 }
 
 
@@ -449,13 +456,12 @@ background-image:url(Assests/3d-perception.jpg);
 }
 
 .img-wrapper {
-  width: 140px;
-  height: 140px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
-  margin-bottom: 25px;
+  margin-bottom: 12px;
   overflow: hidden;
- 
-  border: 4px solid transparent; 
+  border: 2.5px solid transparent;
 }
 
 
@@ -472,21 +478,23 @@ background-image:url(Assests/3d-perception.jpg);
 
 .card-info h3 {
   color: #fff;
-  font-size: 1.4rem;
-  font-weight: 600;
-  margin-bottom: 10px;
+  font-size: 1.05rem;
+  font-weight: 550;
+  line-height: 1.7;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .card-info .role {
-  color: #4c8bf5; 
-  font-size: 0.9rem;
+  color: #4c8bf5;
+  font-size: 0.78rem;
   font-weight: 500;
-  margin-bottom: 5px;
+  margin-bottom: 2px;
 }
 
 .card-info .univ {
   color: #888;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
 }
 #footer {
   height: 40vh;
@@ -545,52 +553,44 @@ background-image:url(Assests/3d-perception.jpg);
   margin-bottom: 8px;
 }
 #call-for-papers{
-
-padding:120px 80px;
-text-align:center;
-
+  padding: 48px 0 32px 0;
+  text-align: center;
 }
 
 #call-for-papers h2{
-
-font-size:54px;
-font-weight:900;
-margin-bottom:40px;
-
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 18px;
 }
 
 .cfp-intro{
-
-max-width:800px;
-margin:auto;
-font-size:20px;
-margin-bottom:60px;
-
+  max-width: 600px;
+  margin: 0 auto 18px auto;
+  font-size: 1rem;
+  margin-bottom: 18px;
 }
 
 .cfp-grid{
-
-display:flex;
-gap:60px;
-justify-content:center;
-flex-wrap:wrap;
-
+  display: flex;
+  gap: 28px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .cfp-box{
 background:var(--bg-section);
 border:1px solid var(--primary);
 /* background:#111; */
-padding:40px;
+padding:30px;
 border-radius:20px;
-width:450px;
+width:420px;
 text-align:left;
 
 }
 
 .cfp-box h3{
 
-font-size:28px;
+font-size:20px;
 margin-bottom:20px;
 
 color:var(--primary);
@@ -598,14 +598,15 @@ color:var(--primary);
 }
 
 .cfp-box ul{
+font-size:14px;
 
-padding-left:20px;
+padding-left:10px;
 
 }
 
 .cfp-box li{
 
-margin-bottom:10px;
+margin-bottom:5px;
 
 }
 
@@ -621,11 +622,11 @@ background:var(--gradient);
 
 display:inline-block;
 margin-top:20px;
-padding:12px 30px;
+padding:10px 25px;
 
 background:var(--accent);
 color:black;
-font-weight:700;
+font-weight:600;
 border-radius:30px;
 text-decoration:none;
 
@@ -681,9 +682,7 @@ transform:translateY(-5px);
 transform:translateY(-5px);
 
 }
-.section-title{
-text-shadow:0 0 20px rgba(0,212,255,0.6);
-}  
+  
 #colon1 {
   filter: invert(57%) sepia(98%) saturate(7452%) hue-rotate(180deg) brightness(100%) contrast(100%);
 }

@@ -33,10 +33,8 @@
       <h4>Contact</h4>
     </a>
   </div>
-  <div id="cursor"></div>
-  <div id="cursor-blur"></div>
 
-  <video autoplay loop muted playsinline src="./Assests/scene5.mp4"></video>
+  <img id="background-image" src="./Assests/sensor-fusion.jpg" alt="Sensor Fusion Background" style="position:fixed;top:0;left:0;width:100vw;height:100vh;object-fit:cover;z-index:-1;filter:blur(4px);opacity:0.89;" />
   <div id="main">
     <div id="page1">
       <h1>AI4RobustPerception</h1>
@@ -68,7 +66,7 @@
             AI-based perception for autonomous driving is an important topic in both
             academia and industry as it sits at the boundary between state-of-the-art learning methods and
             safety-critical real-world deployment. This workshop aims to bring together work on making
-            perception more reliable under real conditions including robustness towards anomalies, out-of distribution
+            perception more reliable under real conditions including robustness towards anomalies, out-ofdistribution
             (OOD) situations, stronger 3D perception including bird’s eye view (BEV) projection
             and depth estimation, and evaluation practices that better reflect safety and deployment needs.
             We also welcome work on multimodal perception and sensor fusion (e.g., camera/LiDAR/radar), and
@@ -84,7 +82,7 @@
             conditions. As a result, progress in this area needs not only new models, but also clearer problem
             definitions, better test approaches, and more informative metrics.
             We invite contributions across a broad range of perception tasks and settings, including robust
-            detection, tracking, segmentation, occupancy and mapping, OOD/anomaly detection and open world perception,
+            detection, tracking, segmentation, occupancy and mapping, OOD/anomaly detection and openworld perception,
             3D perception and BEV-centric methods, depth estimation and depth completion
             for driving, and learning methods that improve robustness such as self-supervision, test-time
             adaptation, and data-centric pipelines (including synthetic data and targeted long-tail collection).
@@ -153,16 +151,91 @@
             <h3>Important Dates</h3>
 
             <ul>
-              <li>Submission Deadline - 15 May</li>
-              <li>Notification - 8 June</li>
-              <li>Camera Ready - 15 June</li>
-              <li>Workshop Date - TBC</li>
+              <li>14 May 2026 — Abstract Submission</li>
+              <li>16 May 2026 — Full Paper Submission</li>
+              <li>5 June 2026 — Acceptance / Rejection Notification</li>
+              <li>25 June 2026 — Camera Ready Paper</li>
+              <li>26 June 2026 — Payment Confirmation Deadline</li>
+              <li>16 August 2026 — Workshop Date</li>
             </ul>
 
           </div>
-        </div>
+          
+          <!-- <div class="organizer-card">
+            <div class="img-wrapper">
+              <img src="./Assests/fawad-ahmed.jpg" alt="Fawad Ahmed">
+            </div>
+            <div class="card-info">
+              <h3>Dr Fawad Ahmed</h3>
+              <p class="role">Organizer</p>
+              <p class="univ">Rochester Institute of Technology, USA</p>
+            </div>
+          </div>
 
-      </div>
+          <div class="organizer-card">
+            <div class="img-wrapper">
+              <img src="./Assests/nazre-batool.jpg" alt="Nazre Batool">
+            </div>
+            <div class="card-info">
+              <h3>Dr Nazre Batool</h3>
+              <p class="role">Organizer</p>
+              <p class="univ">University of Galway, Ireland</p>
+            </div>
+          </div>
+
+          <div class="organizer-card">
+            <div class="img-wrapper">
+              <img src="./Assests/joseph-lemley.jpg" alt="Joseph Lemley">
+            </div>
+            <div class="card-info">
+              <h3>Dr Joseph Lemley</h3>
+              <p class="role">Organizer</p>
+              <p class="univ">University of Galway, Ireland</p>
+            </div>
+          </div>
+
+          <div class="organizer-card">
+            <div class="img-wrapper">
+              <img src="./Assests/talha-iqbal.jpg" alt="Talha Iqbal">
+            </div>
+            <div class="card-info">
+              <h3>Dr Talha Iqbal</h3>
+              <p class="role">Organizer</p>
+              <p class="univ">JANUS Research Centre for AI, Ireland</p>
+            </div>
+          </div>
+
+          <div class="organizer-card">
+            <div class="img-wrapper">
+              <img src="./Assests/edward-jones.jpg" alt="Edward Jones">
+            </div>
+            <div class="card-info">
+              <h3>Prof Edward Jones</h3>
+              <p class="role">Organizer</p>
+              <p class="univ">University of Galway, Ireland</p>
+            </div>
+          </div>
+
+          <div class="organizer-card">
+            <div class="img-wrapper">
+              <img src="./Assests/ciaran-eising.jpg" alt="Ciaran Eising">
+            </div>
+            <div class="card-info">
+              <h3>Dr Ciaran Eising</h3>
+              <p class="role">Organizer</p>
+              <p class="univ">University of Limerick, Ireland</p>
+            </div>
+          </div>
+
+          <div class="organizer-card">
+            <div class="img-wrapper">
+              <img src="./Assests/toby-breckon.jpg" alt="Toby Breckon">
+            </div>
+            <div class="card-info">
+              <h3>Prof Toby Breckon</h3>
+              <p class="role">Organizer</p>
+              <p class="univ">Durham University, UK</p>
+            </div> -->
 
       <div id="page3">
 
@@ -195,7 +268,7 @@
               <img src="./Assests/MM-3 (2).png" alt="Michael">
             </div>
             <div class="card-info">
-              <h3>Michael Madden</h3>
+              <h3>Prof Michael Madden</h3>
               <p class="role">Organizer</p>
               <p class="univ">University of Galway</p>
             </div>
@@ -207,19 +280,31 @@
               <img src="./Assests/Valentina.jpeg" alt="Valentina">
             </div>
             <div class="card-info">
-              <h3>Valentina Donzella</h3>
+              <h3>Prof Valentina Donzella</h3>
               <p class="role">Organizer</p>
               <p class="univ">Queen Mary University of London</p>
             </div>
           </div>
+          <div class="organizer-card">
+            <div class="img-wrapper">
+              <img src="./Assests/asadasad.jpg" alt="Asad">
+            </div>
+            <div class="card-info">
+              <h3>Mr Muhammad Asad</h3>
+              <p class="role">Organizer</p>
+              <p class="univ">University of Galway</p>
+            </div>
+          </div>
 
+          <!-- Added organizers -->
+          
           
           <div class="organizer-card featured">
             <div class="img-wrapper">
               <img src="./Assests/ihsan-pp (1).jpg" alt="Ihsan">
             </div>
             <div class="card-info">
-              <h3>Ihsan Ullah</h3>
+              <h3>Dr Ihsan Ullah</h3>
               <p class="role">Organizer</p>
               <p class="univ">University of Galway</p>
             </div>
@@ -230,29 +315,20 @@
               <img src="./Assests/ganesh (1).png" alt="Ganesh">
             </div>
             <div class="card-info">
-              <h3>Ganesh Sistu</h3>
+              <h3>Mr Ganesh Sistu</h3>
               <p class="role">Organizer</p>
               <p class="univ">Valeo Vision Systems</p>
             </div>
           </div>
           
-          <div class="organizer-card">
-            <div class="img-wrapper">
-              <img src="./Assests/asadasad.jpg" alt="Asad">
-            </div>
-            <div class="card-info">
-              <h3>Muhammad Asad</h3>
-              <p class="role">Organizer</p>
-              <p class="univ">University of Galway</p>
-            </div>
-          </div>
+          
           
           <div class="organizer-card">
             <div class="img-wrapper">
               <img src="./Assests/Adeel.jpg" alt="Adeel">
             </div>
             <div class="card-info">
-              <h3>Muhammad Adeel Hafeez</h3>
+              <h3>Mr Muhammad Adeel Hafeez</h3>
               <p class="role">Organizer</p>
               <p class="univ">University of Galway</p>
             </div>
@@ -261,6 +337,84 @@
           
         </div>
       </div>
+<div id="page4">
+  <h1>Program Committee</h1>
+  
+  <div id="organizers-cards">
+
+    <div class="organizer-card">
+      <div class="img-wrapper">
+        <img src="./Assests/fawad.jpeg" alt="Fawad">
+      </div>
+      <div class="card-info">
+        <h3>Fawad Ahmed</h3>
+        <p class="univ">Rochester Institute of Technology, USA</p>
+      </div>
+    </div>
+
+    <div class="organizer-card">
+      <div class="img-wrapper">
+        <img src="./Assests/Nazre-Batool.webp" alt="Nazre">
+      </div>
+      <div class="card-info">
+        <h3>Nazre Batool</h3>
+        <p class="univ">University of Galway, IE</p>
+      </div>
+    </div>
+
+    <div class="organizer-card">
+      <div class="img-wrapper">
+        <img src="./Assests/joseph_lemley.jpeg" alt="Joseph">
+      </div>
+      <div class="card-info">
+        <h3>Joseph Lemley</h3>
+        <p class="univ">University of Galway, IE</p>
+      </div>
+    </div>
+
+    <div class="organizer-card featured">
+      <div class="img-wrapper">
+        <img src="./Assests/talha.jpeg" alt="Talha">
+      </div>
+      <div class="card-info">
+        <h3>Talha Iqbal</h3>
+        <p class="univ">JANUS Research Centre for AI, IE</p>
+      </div>
+    </div>
+
+    <div class="organizer-card">
+      <div class="img-wrapper">
+        <img src="./Assests/edward.jpeg" alt="Edward">
+      </div>
+      <div class="card-info">
+        <h3>Edward Jones</h3>
+        <p class="univ">University of Galway, IE</p>
+      </div>
+    </div>
+
+    <div class="organizer-card">
+      <div class="img-wrapper">
+        <img src="./Assests/ciaran.png" alt="Ciaran">
+      </div>
+      <div class="card-info">
+        <h3>Ciaran Eising</h3>
+        <p class="univ">University of Limerick, IE</p>
+      </div>
+    </div>
+
+    <div class="organizer-card">
+      <div class="img-wrapper">
+        <img src="./Assests/toby.jpeg" alt="Toby">
+      </div>
+      <div class="card-info">
+        <h3>Toby Breckon</h3>
+        <p class="univ">Durham University, UK</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+      
 
 
       <div id="footer">
