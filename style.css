@@ -78,7 +78,7 @@ body {
   gap: 28px;
   align-items: center;
 }
-}
+
 #nav h4 {
   text-transform: uppercase;
   font-weight: 500;
@@ -506,14 +506,14 @@ background-image:url(Assests/3d-perception.jpg);
 #footer {
   height: 40vh;
   width: 100%;
- 
   background:linear-gradient(135deg,#0B0F1A,#11182B);
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: flex-start;
   gap: 6.5vw;
-  padding: 0 100px;
+  padding: 0 100px 30px 100px;
+  box-sizing: border-box;
 }
 #footer > img {
   position: absolute;
@@ -531,7 +531,9 @@ background-image:url(Assests/3d-perception.jpg);
   width: fit-content;
   position: relative;
   z-index: 99;
- 
+  margin-left: auto;
+  margin-bottom: 0;
+  align-self: flex-end;
 }
 #f2 h3 {
   font-size: 1.6vw;

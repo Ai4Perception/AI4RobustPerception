@@ -39,7 +39,7 @@
     </div>
   </div>
 
-  <img id="background-image" src="./Assests/sensor-fusion.jpg" alt="Sensor Fusion Background" style="position:fixed;top:0;left:0;width:100vw;height:100vh;object-fit:cover;z-index:-1;filter:blur(4px);opacity:0.89;" />
+  <video id="background-video" src="./Assests/scene2.mp4" autoplay loop muted playsinline style="position:fixed;top:0;left:0;width:100vw;height:100vh;object-fit:cover;z-index:-1;filter:blur(4px);opacity:0.89;"></video>
   <div id="main">
     <div id="page1">
       <h1>AI4RobustPerception</h1>
@@ -270,8 +270,8 @@
 
       <div id="page4">
         <h1>Organizers</h1>
+        <div id="organizers-cards">
         
-        <div id="organizers-card">
           <div class="organizer-card">
             <div class="img-wrapper">
               <img src="./Assests/MM-3 (2).png" alt="Michael">
@@ -303,11 +303,8 @@
               <p class="role">Organizer</p>
               <p class="univ">University of Galway</p>
             </div>
-          </div>
+          </div> 
 
-          <!-- Added organizers -->
-          
-          
           <div class="organizer-card">
             <div class="img-wrapper">
               <img src="./Assests/ihsan-pp (1).jpg" alt="Ihsan">
@@ -343,8 +340,8 @@
             </div>
           </div>
           
-          
         </div>
+        
       </div>
 <div id="page4">
   <h1>Program Committee</h1>
@@ -431,11 +428,11 @@
         <div id="f1">
           <img src="./Assests/IJCAI_Bremen_Logo.png" alt="" />
         </div>
-
+        <div style="flex:1"></div>
         <div id="f4">
-          <h4>
-            Contact:
-            ihsan.ullah@universityofgalway.ie
+          <h4 style="text-align:right;">
+            Contact:<br>
+            <span style="font-weight:400;">ihsan.ullah@universityofgalway.ie</span>
           </h4>
         </div>
       </div>
