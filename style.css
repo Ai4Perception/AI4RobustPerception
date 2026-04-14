@@ -96,7 +96,7 @@ body {
 }
 /* ........background video......... */
 video {
-  height: 100%;
+  min-height: 100vh;
   width: 100%;
   object-fit: cover;
   z-index: -1;
@@ -109,6 +109,7 @@ video {
   position: relative;
   background-color: rgba(0, 0, 0, 0.39);
   margin-top: 130px; /* Prevents hero section from being hidden behind navbar */
+  min-height: calc(100vh - 130px - 40vh); /* fill viewport minus navbar and footer */
 }
 /* .......about page 1......... */
 #page1 {
@@ -514,6 +515,7 @@ background-image:url(Assests/3d-perception.jpg);
   gap: 6.5vw;
   padding: 0 100px 30px 100px;
   box-sizing: border-box;
+  margin-top: auto;
 }
 #footer > img {
   position: absolute;
@@ -522,13 +524,9 @@ background-image:url(Assests/3d-perception.jpg);
   z-index: 0;
 }
 #f1 img {
-  height: 100px;
-}
-#f1,
-#f2,
-#f3,
-#f4 {
-  width: fit-content;
+  height: 80px;
+  width: auto;
+  object-fit: contain;
   position: relative;
   z-index: 99;
   margin-left: auto;
